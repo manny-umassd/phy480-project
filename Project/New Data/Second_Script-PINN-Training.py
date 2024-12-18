@@ -121,7 +121,6 @@ def compute_loss(predictions, targets, positions, velocities, masses, G=4*(np.pi
         # Compute physics loss for body i
         physics_loss += torch.mean((predicted_accelerations[:, i*3:(i+1)*3] - force_residual)**2)
 
-    # Optional: normalize physics_loss by num_bodies if desired
     physics_loss = physics_loss / num_bodies
 
     return data_loss, physics_loss
