@@ -1,0 +1,94 @@
+#Planet List
+
+bodies = [
+    {
+        'name': 'Sun',
+        'mass': 1.0,
+        'pos': vector(0, 0, 0),
+        'vel': vector(0, 0, 0),
+        'radius': 0.2,
+        'color': color.yellow,
+        'texture': None,
+    },
+    {
+        'name': 'Mercury',
+        'mass': 1.7e-7,
+        'pos': vector(0.39, 0, 0),  # Distance ~0.39 AU from the Sun
+        'vel': vector(0, 0, 8.20),  
+        'radius': 0.02,
+        'color': color.gray(0.5),
+        'texture': None,
+    },
+    {
+        'name': 'Venus',
+        'mass': 2.45e-6,
+        'pos': vector(0.72, 0, 0),  # Distance ~0.72 AU from the Sun
+        'vel': vector(0, 0, 7.34),
+        'radius': 0.04,
+        'color': color.orange,
+        'texture': None,
+    },
+    {
+        'name': 'Earth',
+        'mass': 3.0e-6,
+        'pos': vector(1.0, 0, 0),  # Distance ~1 AU from the Sun
+        'vel': vector(0, 0, 6.18), 
+        'radius': 0.05,
+        'color': color.blue,
+        'texture': textures.earth,
+    },
+    {
+        'name': 'Mars',
+        'mass': 3.2e-7,
+        'pos': vector(1.52, 0, 0),  # Distance ~1.52 AU from the Sun
+        'vel': vector(0, 0, 4.66),
+        'radius': 0.03,
+        'color': color.red,
+        'texture': None,
+    },
+    {
+        'name': 'Jupiter',
+        'mass': 9.5e-4,
+        'pos': vector(5.2, 0, 0),  # Distance ~5.2 AU from the Sun
+        'vel': vector(0, 0, 2.62),  
+        'radius': 0.1,
+        'color': color.orange,
+        'texture': None,
+    },
+    {
+        'name': 'Saturn',
+        'mass': 2.8e-4,
+        'pos': vector(9.58, 0, 0),  # Distance ~9.58 AU from the Sun
+        'vel': vector(0, 0, 1.93),
+        'radius': 0.08,
+        'color': color.yellow,
+        'texture': None,
+    },
+    {
+        'name': 'Uranus',
+        'mass': 4.4e-5,
+        'pos': vector(19.22, 0, 0),  # Distance ~19.22 AU from the Sun
+        'vel': vector(0, 0, 1.37),
+        'radius': 0.07,
+        'color': color.cyan,
+        'texture': None,
+    },
+    {
+        'name': 'Neptune',
+        'mass': 5.1e-5,
+        'pos': vector(30.05, 0, 0),  # Distance ~30.05 AU from the Sun
+        'vel': vector(0, 0, 1.14),
+        'radius': 0.07,
+        'color': color.blue,
+        'texture': None,
+    },
+    {
+        'name': 'Pluto',
+        'mass': 6.5e-9,
+        'pos': vector(39.48, 0, 0),  # Distance ~39.48 AU from the Sun
+        'vel': vector(0, 0, 0.78),
+        'radius': 0.02,
+        'color': color.white,
+        'texture': None,
+    },
+]
