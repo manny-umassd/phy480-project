@@ -157,15 +157,15 @@ if __name__ == "__main__":
     print(model)
 
     # Optimizer
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-5) #Adjust Learning Rate Here
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-6) #Adjust Learning Rate Here
 
     # Training parameters
-    epochs = 200          #Adjust epochs here, 200 is NOT enough, try 3500  (Well it might be with longer dataset)
+    epochs = 1000          #Adjust epochs here, 200 is NOT enough, try 3500  (Well it might be with longer dataset)
     masses = torch.tensor([1.0, 3.004e-6, 9.551e-4], dtype=torch.float32)
 
     # Physics introduction parameters
     start_physics_epoch = 10
-    max_physics_weight = 1e-4 #Adjust weight of physics laws on training here. 0 physics creates the BlackBox model. 
+    max_physics_weight = 1e-3 #Adjust weight of physics laws on training here. 0 physics creates the BlackBox model. 
     physics_weight = 0.0 # Initial physics weight, allows the model to get a grasp of the data and adjust smoother.
 
     for epoch in range(epochs):
@@ -205,7 +205,7 @@ if __name__ == "__main__":
         avg_train_loss = train_loss_sum / len(train_loader)
 
         # Validation
-        model.eval()
+        model.eval() 
         val_loss_sum = 0.0
         with torch.no_grad():
             for batch in val_loader:
